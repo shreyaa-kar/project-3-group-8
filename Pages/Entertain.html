@@ -8,11 +8,21 @@
       crossorigin="anonymous">
       <style>
         .card{
-            height: 450px;
+            height: 500px;
         }
         .card:hover{
             background-color: rgb(238, 226, 162);
         }
+        #heartless{
+           height: 20px;
+           width: 20px;
+   
+        }
+
+      .btn{
+            border: none;
+            background: none;
+      }
       </style>
 </head>
 <body>
@@ -24,6 +34,9 @@
           <h2 class="text-center fw-medium fs-5 p-1 ">Merry Christmas: Katrina Kaif-Vijay Sethupathi in killer form in Sriram Raghavan’s Before Sunrise with a murder</h2>
           <p class="text-center fw-normal p-1">In Sriram Raghavan's latest thriller Merry Christmas, Katrina Kaif and Vijay Sethupathi are only lovers in the building.</p>
           <span class="text-danger text-end p-2 mb-0"> January 14, 2024 08:32 IST</span>
+          <button type="button" class="btn">
+            <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+          </button>
       </div>
     </div>
 
@@ -33,6 +46,9 @@
             <h2 class="text-center fw-medium fs-5 p-1 ">Guntur Kaaram box office collection on second day, earns a mere Rs 13 crore</h2>
             <p class="text-center fw-normal p-1">Guntur Kaaram box office collection day 2: After a strong opening at the box office, Mahesh Babu's film plummeted on its second day, and minted just Rs 13 crore. </p>
             <span class="text-danger text-end p-2 mb-0">January 14, 2024 10:35 IST</span>
+            <button type="button" class="btn">
+              <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            </button>
         </div>
       </div>
 
@@ -42,6 +58,9 @@
             <h2 class="text-center fw-medium fs-5 p-1 ">Aamir Khan’s daughter Ira Khan and fitness trainer Nupur Shikhare tied the knot in Udaipur on January 10</h2>
             <p class="text-center fw-normal p-1">The event was graced by Ira's family members from both her paternal and maternal sides, in Udaipur</p>
             <span class="text-danger text-end p-2 mb-0">January 13, 2024 22:48 IST</span>
+            <button type="button" class="btn">
+              <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            </button>
         </div>
       </div>
 
@@ -52,6 +71,9 @@
             </h2>
             <p class="text-center fw-normal p-1"> Agastya Nanda said that he grew up on his uncle Abhishek Bachchan's films, which is why he looks up to his 'mamu' more than grandfather</p>
             <span class="text-danger text-end p-2 mb-0">January 14, 2024 16:08 IST</span>
+            <button type="button" class="btn">
+              <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            </button>
         </div>
       </div>
     
@@ -69,6 +91,9 @@
           <h2 class="text-center fw-medium fs-5 p-1 ">Neeraj Ghaywan, Varun Grover ‘cringe’ at Anurag Kashyap’s show of support for Animal director</h2>
           <p class="text-center fw-normal p-1">Neeraj Ghaywan and Varun Grover did not approve of Anurag Kashyap's post for the controversial Animal director.</p>
           <span class="text-danger text-end p-2 mb-0">JANUVARY 4, 2024 7:18 IST</span>
+          <button type="button" class="btn">
+            <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+          </button>
       </div>
     </div>
 
@@ -79,6 +104,9 @@
             <p class="text-center fw-normal p-1">Now with one film down, Vedang Raina is rumored to have locked his next. As per reports, the film is called Jigra.
             </p>
             <span class="text-danger text-end p-2 mb-0">JANUVARY 9, 2024 8:40 IST</span>
+            <button type="button" class="btn">
+              <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            </button>
         </div>
       </div>
 
@@ -88,6 +116,9 @@
             <h2 class="text-center fw-medium fs-5 p-1 ">‘Might as well die if I can’t act’: Nawazuddin Siddiqui says he  lost all of Bollywood’s future</h2>
             <p class="text-center fw-normal p-1">Nawazuddin Siddiqui said that there was a time when commercial as well as independent films were directed.</p>
             <span class="text-danger text-end p-2 mb-0">JANUVARY 8, 2024 10:42 IST</span>
+            <button type="button" class="btn">
+              <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            </button>
         </div>
       </div>
 
@@ -98,6 +129,9 @@
             </h2>
             <p class="text-center fw-normal p-1">Yash Raj Films released a video detailing the breath-taking visual effects that were created for Tiger 3 .</p>
             <span class="text-danger text-end p-2 mb-0">JANUVARY 14, 2024 7:45 IST</span>
+            <button type="button" class="btn">
+              <img src="heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            </button>
         </div>
 
     
@@ -112,5 +146,22 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"  
       crossorigin="anonymous"> 
     </script>
+
+<script>
+  let state = true;
+  function turnRed(){
+      const image = document.getElementById("heartless");
+     
+      if(state){
+          image.src = "red-heart.png";
+          state = false;
+      }
+      else {
+          image.src = "heart-1.png";
+          state = true;
+      }
+  }
+
+</script>
 </body>
 </html>
