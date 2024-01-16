@@ -13,7 +13,7 @@
         .card:hover{
             background-color: rgb(238, 226, 162);
         }
-        #heartless{
+        .heartless{
            height: 20px;
            width: 20px;
    
@@ -74,7 +74,7 @@
           <p class="text-center fw-normal p-1">Indian duo fight back from 14-20 down in the second game to win the semi-final against World champions Seo Seung-jae-Kang Min-hyuk 21-18, 22-20</p>
           <span class="text-danger text-end p-2 mb-0">JANUARY 12, 2024 14:45 IST</span>
           <button type="button" class="btn">
-            <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            <img src="../Images/heart-1.png" onclick="changeImg('1')" id = "heartless-1" class="position-relative start-10 bottom-0  heartless">
           </button>
       </div>
     </div>
@@ -86,8 +86,7 @@
             <p class="text-center fw-normal p-1">A key catalyst for infrastructure development is the power sector . Recently, India transitioned from a power deficit to a power surplus country </p>
             <span class="text-danger text-end p-2">JANUARY 13, 2024 23:45 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
-            </button>
+              <img src="../Images/heart-1.png" onclick="changeImg('2')" id = "heartless-2" class="position-relative start-10 bottom-0  heartless">          </button>
         </div>
       </div>
 
@@ -98,7 +97,7 @@
             <p class="text-center fw-normal p-1">In a revamp of the retirement fund body Employees’ Provident Fund Organisation (EPFO), the government has reconstituted the body’s Central Board of Trustees (CBT) after the completion of its five-year term.</p>
             <span class="text-danger text-end p-2">JANUARY 14, 2024 10:45 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('3')" id = "heartless-3" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -110,7 +109,7 @@
             <p class="text-center fw-normal p-1">The displacement of Russian fuels away from Europe — the major reason that led to the spurt in Indian fuel exports to the continent in the aftermath of the Ukraine invasion </p>
             <span class="text-danger text-end p-2">JANUARY 15, 2024 9:45 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('4')" id = "heartless-4" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -130,7 +129,7 @@
           <p class="text-center fw-normal p-1">Retail inflation surged to a four-month high of 5.69 per cent in December driven by higher prices of food items such as pulses, spices, data released by the National Statistical Office (NSO) Friday showed.</p>
           <span class="text-danger text-end p-2">JANUARY 1, 2024 7:45 IST</span>
           <button type="button" class="btn">
-            <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            <img src="../Images/heart-1.png" onclick="changeImg('5')" id = "heartless-5" class="position-relative start-10 bottom-0  heartless">          
           </button>
       </div>
     </div>
@@ -142,7 +141,7 @@
             <p class="text-center fw-normal p-1">Tata Consultancy Services (TCS), India’s largest IT services company, has reported a 1.95 per cent increase in net profit to Rs 11,058 crore for the third quarter (Q3) ending December 2023 .</p>
             <span class="text-danger text-end p-2">JANUARY 3, 2024 8:40 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('6')" id = "heartless-6" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -154,7 +153,7 @@
             <p class="text-center fw-normal p-1">Infosys Ltd on Thursday posted a 7.3 per cent decline in consolidated net profit at Rs 6,106 crore in the third quarter of the current financial year as against Rs 6,586 crore during the same period a year ago.</p>
             <span class="text-danger text-end p-2">JANUARY 7, 2024 12:42 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('7')" id = "heartless-7" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -166,14 +165,12 @@
             <p class="text-center fw-normal p-1">Reserve Bank of India (RBI) Governor Shaktikanta Das Thursday raised concerns over algorithm-based lending by banks and NBFCs and said there is a need testing.</p>
             <span class="text-danger text-end p-2">JANUARY 12, 2024 14:45 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
-            </button>
+              <img src="../Images/heart-1.png" onclick="changeImg('8')" id = "heartless-8" class="position-relative start-10 bottom-0  heartless">         
+             </button>
         </div>
 
     
-      
-    
-   </div>
+    </div>
     
     
 
@@ -184,20 +181,60 @@
     </script>
 
 <script>
-  let state = true;
-  function turnRed(){
-      const image = document.getElementById("heartless");
-     
-      if(state){
-          image.src = "red-heart.png";
-          state = false;
+  let ver1 = true;
+  let ver2 = true;
+  let ver3 = true;
+  let ver4 = true;
+  let ver5 = true;
+  let ver6 = true;
+  let ver7 = true;
+  let ver8 = true;
+  
+  function changeImg(value) {
+  
+      if(value==1){
+          const bulbElement = document.getElementById("heartless-1");
+          ver1 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver1 = !ver1
       }
-      else {
-          image.src = "heart-1.png";
-          state = true;
+      else if(value==2){
+          const bulbElement = document.getElementById("heartless-2");
+          ver2 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver2 = !ver2
       }
+      else if(value==3){
+          const bulbElement = document.getElementById("heartless-3");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver3 = !ver3
+      }
+      else if(value==4){
+          const bulbElement = document.getElementById("heartless-4");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver4 = !ver4
+      }
+      else if(value==5){
+          const bulbElement = document.getElementById("heartless-5");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver5 = !ver5
+      }
+      else if(value==6){
+          const bulbElement = document.getElementById("heartless-6");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver6 = !ver6
+      }
+      else if(value==7){
+          const bulbElement = document.getElementById("heartless-7");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver7 = !ver7
+      }
+      else if(value==8){
+          const bulbElement = document.getElementById("heartless-8");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver8 = !ver8
+      }
+      
   }
-
-</script>
+  
+  </script>
 </body>
 </html>
