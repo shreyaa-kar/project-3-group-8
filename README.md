@@ -23,7 +23,6 @@ One can explore different types of news here. One can choose from the different 
 <img src="./TWO.png"  width="48%" height="48%">
 <img src="./THREE.png"  width="48%" height="48%">
 <img src="./FOUR.png"  width="48%" height="48%">
-<img src="./FIVE.png"  width="48%" height="48%">
 </br></br>
 
 
