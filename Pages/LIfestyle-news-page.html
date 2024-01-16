@@ -6,79 +6,125 @@
       rel="stylesheet" 
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
       crossorigin="anonymous">
+      <style>
+        .card{
+            height: 500px;
+        }
+        .card:hover{
+            background-color: rgb(238, 226, 162);
+        }
+        .heartless{
+           height: 20px;
+           width: 20px;
+   
+        }
+
+      .btn{
+            border: none;
+            background: none;
+      }
+      </style>
+
 </head>
 <body>
    <div class="row">
 
     <div class="col-sm-12  col-md-6 col-lg-3">
       <div class="card m-3  w-auto   p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/japanese-workout-tai-chi.jpg?resize=450,253 " class="shadow"/>
+          <img src="../Images/L-1.webp " class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Try these Japanese workouts for a trim tummy </h2>
           <p class="text-left fw-normal p-1">Japanese workouts for belly fat go beyond mere physical exercise; they embody a holistic approach to well-being, incorporating mindfulness, tradition</p>
           <p class="text-danger   text-end fs-6 p-1 ">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('1')" id = "heartless-1" class="position-relative start-10 bottom-0  heartless">
+          </button>
+
+
       </div>
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/couple-unhappy-relationship.jpg?resize=450,253 " class="shadow"/>
+          <img src="../Images/L-2.webp " class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Is your partner unhappy? Here’s what you can do about it</h2>
           <p class="text-left fw-normal p-1">Remember, a relationship is a journey, and actively addressing signs of unhappiness can lead to a more resilient and joyful connection.</p>
           <p class="text-danger  text-end fs-6 p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('2')" id = "heartless-2" class="position-relative start-10 bottom-0  heartless">    
+          </button>
       </div>
     </div>
 
     <div class="col-sm-6  col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/prabha-atre.jpg?resize=450,253 " class="shadow"/>
+          <img src="../Images/L-3.webp" class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Prabha Atre, vocalist who challenged conventions of classical realm</h2>
           <p class="text-left fw-normal p-1">Graduated in science followed by a law degree, the doyen of Kirana gharana was three times Padma awardee.</p>
           <p class="text-danger  text-end fs-6 p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('3')" id = "heartless-3" class="position-relative start-10 bottom-0  heartless">          
+          </button>
       </div>
     </div>
 
     <div class="col-sm-6  col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/ginger-jaggery-candy-representtaive_reepik.jpg?resize=450,253" class="shadow"/>
+          <img src="../Images/L-4.webp" class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Is ginger-jaggery candy a saviour against winter cold? We find out</h2>
           <p class="text-left fw-normal p-1">Antitussive and cough suppressant benefits are attributed to this combination, said Dr Dilip Gude, senior consultant physician, Yashoda Hospitals, Hyderabad. </p>
           <p class="text-danger  text-end fs-6 p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('4')" id = "heartless-4" class="position-relative start-10 bottom-0  heartless">          
+          </button>
       </div>
     </div>
 
     <div class="col-sm-12  col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/superfoods_1600_getty.jpg?resize=450,253" class="shadow"/>
+          <img src="../Images/L-5.jpg" class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Are superfoods your only secret to healthy hair? Experts spill the beans</h2>
           <p class="text-left fw-normal p-1">Consult with a nutritionist or dermatologist for personalised advice tailored to your hair type and health, said Dr Rohini Patil, nutritionist, founder, Nutracy Lifestyle</p>
           <p class="text-danger   text-end fs-6  p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('5')" id = "heartless-5" class="position-relative start-10 bottom-0  heartless">          
+          </button>
       </div>
     </div>
 
     <div class="col-sm-12  col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/honey.jpg?resize=450,253 " class="shadow"/>
+          <img src="../Images/L-6.webp" class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Nutrition alert: Here’s what a 100-gram serving of honey contains</h2>
           <p class="text-left fw-normal p-1">Dr Shuchin Bajaj, general physician and founder-director, Ujala Cygnus Group of Hospitals, explained why honey is a go-to remedy for maintaining vitality</p>
           <p class="text-danger  text-end fs-6 p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('6')" id = "heartless-6" class="position-relative start-10 bottom-0  heartless">          
+          </button>
+
       </div>
     </div>
 
     <div class="col-sm-12  col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/google-1.jpg?resize=450,253 " class="shadow"/>
+          <img src="../Images/L-7.webp" class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">Here are the most-searched diseases on Google in 2023</h2>
           <p class="text-left fw-normal p-1">The UK-based comparison site Compare the Market delved into the Google Trends data to identify the top three most searched medical conditions across 155 countries worldwide</p>
           <p class="text-danger  text-end fs-6 p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('7')" id = "heartless-7" class="position-relative start-10 bottom-0  heartless">          
+          </button>
       </div>
     </div>
 
     <div class="col-sm-12  col-md-6 col-lg-3">
       <div class="card m-3  w-auto  p-2 shadow">
-          <img src="https://images.indianexpress.com/2024/01/eggless-mayo-recipe.jpg?resize=450,253" class="shadow"/>
+          <img src="../Images/L-8.webp" class="shadow"/>
           <h2 class="text-left fw-medium fs-5 p-1 ">This eggless version of mayonnaise is just as good as the OG (recipe inside)</h2>
           <p class="text-left fw-normal p-1">Celebrity chef Kunal Kapur recently shared an easy and creative recipe for eggless mayonnaise on Instagram, providing a healthier alternative </p>
           <p class="text-danger text-end fs-6 p-1">JANUARY 14, 2024 08:31 IST</p>
+          <button type="button" class="btn">
+            <img src="../Images/heart-1.png" onclick="changeImg('8')" id = "heartless-8" class="position-relative start-10 bottom-0  heartless">         
+           </button>
       </div>
     </div>
     
@@ -89,5 +135,62 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"  
       crossorigin="anonymous"> 
     </script>
+
+<script>
+  let ver1 = true;
+  let ver2 = true;
+  let ver3 = true;
+  let ver4 = true;
+  let ver5 = true;
+  let ver6 = true;
+  let ver7 = true;
+  let ver8 = true;
+  
+  function changeImg(value) {
+  
+      if(value==1){
+          const bulbElement = document.getElementById("heartless-1");
+          ver1 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver1 = !ver1
+      }
+      else if(value==2){
+          const bulbElement = document.getElementById("heartless-2");
+          ver2 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver2 = !ver2
+      }
+      else if(value==3){
+          const bulbElement = document.getElementById("heartless-3");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver3 = !ver3
+      }
+      else if(value==4){
+          const bulbElement = document.getElementById("heartless-4");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver4 = !ver4
+      }
+      else if(value==5){
+          const bulbElement = document.getElementById("heartless-5");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver5 = !ver5
+      }
+      else if(value==6){
+          const bulbElement = document.getElementById("heartless-6");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver6 = !ver6
+      }
+      else if(value==7){
+          const bulbElement = document.getElementById("heartless-7");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver7 = !ver7
+      }
+      else if(value==8){
+          const bulbElement = document.getElementById("heartless-8");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver8 = !ver8
+      }
+      
+  }
+  
+  </script>
 </body>
 </html>
