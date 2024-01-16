@@ -1,28 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-            background-color: black;
-        }
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: #E3F2D4;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    margin-left: 150px;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li{
+    padding: 10px 30px;
+   position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.dropdown li{
+    display: block;
+    position: absolute;
 
-        .name{
-            padding: 20px;
-            color: rgb(45, 181, 254);
-            /* font-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-            font-size: 40px;
-            
-        }
-        .navbar{
-            background-color: rgb(0, 0, 0);
-            height: 220px;
-            width: 100%;
-            margin-top: -22px;
-           
- </style>
- </head>
+}
+#main-Product-Image{
+    height:400px;
+    width: 400px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0 ,0.25);
+    display: block;
+    margin: 20px auto;
+}
+.Product-Images{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;  
+}
+.product-image-container{
+    display: flex;
+    justify-content: center;
+}
+.Container{
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+.item{
+        height: 350px;
+        width: 250px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 5px;
+        transition: transform 450ms;      
+}
+.item:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+    
+}
+
+.img-resizer{
+    height: 200px;
+    margin: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+ 
+}
+
+.font-size{
+    
+    font-size: 12px;
+    
+}
+.btnx{
+    background-color: #7a9352;
+    height: 25px;
+    font-size: 15px;
+    color: #E3F2D4;
+    display: flex;
+    align-items: center;
+    margin-left:50px ;
+    
+}
+.Categories-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    .items{
+        margin: 10px;
+        transition: transform 450ms;
+    }
+    .items:hover{
+        transform: scale(1.09);
+        cursor: pointer;
+    }
+    .Categories-img{
+        height:250px;
+    }
+    <<<<<<< HEAD
+     .explore{te
+     }
+    
