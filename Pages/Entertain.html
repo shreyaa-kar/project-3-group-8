@@ -13,7 +13,7 @@
         .card:hover{
             background-color: rgb(238, 226, 162);
         }
-        #heartless{
+        .heartless{
            height: 20px;
            width: 20px;
    
@@ -74,7 +74,7 @@
           <p class="text-center fw-normal p-1">In Sriram Raghavan's latest thriller Merry Christmas, Katrina Kaif and Vijay Sethupathi are only lovers in the building.</p>
           <span class="text-danger text-end p-2 mb-0"> January 14, 2024 08:32 IST</span>
           <button type="button" class="btn">
-            <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            <img src="../Images/heart-1.png" onclick="changeImg('1')" id = "heartless-1" class="position-relative start-10 bottom-0  heartless">
           </button>
       </div>
     </div>
@@ -86,7 +86,7 @@
             <p class="text-center fw-normal p-1">Guntur Kaaram box office collection day 2: After a strong opening at the box office, Mahesh Babu's film plummeted on its second day, and minted just Rs 13 crore. </p>
             <span class="text-danger text-end p-2 mb-0">January 14, 2024 10:35 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('2')" id = "heartless-2" class="position-relative start-10 bottom-0  heartless">    
             </button>
         </div>
       </div>
@@ -98,7 +98,7 @@
             <p class="text-center fw-normal p-1">The event was graced by Ira's family members from both her paternal and maternal sides, in Udaipur</p>
             <span class="text-danger text-end p-2 mb-0">January 13, 2024 22:48 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('3')" id = "heartless-3" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -111,7 +111,7 @@
             <p class="text-center fw-normal p-1"> Agastya Nanda said that he grew up on his uncle Abhishek Bachchan's films, which is why he looks up to his 'mamu' more than grandfather</p>
             <span class="text-danger text-end p-2 mb-0">January 14, 2024 16:08 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('4')" id = "heartless-4" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -131,7 +131,7 @@
           <p class="text-center fw-normal p-1">Neeraj Ghaywan and Varun Grover did not approve of Anurag Kashyap's post for the controversial Animal director.</p>
           <span class="text-danger text-end p-2 mb-0">JANUVARY 4, 2024 7:18 IST</span>
           <button type="button" class="btn">
-            <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+            <img src="../Images/heart-1.png" onclick="changeImg('5')" id = "heartless-5" class="position-relative start-10 bottom-0  heartless">          
           </button>
       </div>
     </div>
@@ -144,7 +144,7 @@
             </p>
             <span class="text-danger text-end p-2 mb-0">JANUVARY 9, 2024 8:40 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('6')" id = "heartless-6" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -156,7 +156,7 @@
             <p class="text-center fw-normal p-1">Nawazuddin Siddiqui said that there was a time when commercial as well as independent films were directed.</p>
             <span class="text-danger text-end p-2 mb-0">JANUVARY 8, 2024 10:42 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
+              <img src="../Images/heart-1.png" onclick="changeImg('7')" id = "heartless-7" class="position-relative start-10 bottom-0  heartless">          
             </button>
         </div>
       </div>
@@ -169,8 +169,8 @@
             <p class="text-center fw-normal p-1">Yash Raj Films released a video detailing the breath-taking visual effects that were created for Tiger 3 .</p>
             <span class="text-danger text-end p-2 mb-0">JANUVARY 14, 2024 7:45 IST</span>
             <button type="button" class="btn">
-              <img src="../Images/heart-1.png" onclick="turnRed()" id = "heartless" class="position-relative start-10 bottom-0 ">
-            </button>
+              <img src="../Images/heart-1.png" onclick="changeImg('8')" id = "heartless-8" class="position-relative start-10 bottom-0  heartless">         
+             </button>
         </div>
 
     
@@ -187,20 +187,60 @@
     </script>
 
 <script>
-  let state = true;
-  function turnRed(){
-      const image = document.getElementById("heartless");
-     
-      if(state){
-          image.src = "red-heart.png";
-          state = false;
+  let ver1 = true;
+  let ver2 = true;
+  let ver3 = true;
+  let ver4 = true;
+  let ver5 = true;
+  let ver6 = true;
+  let ver7 = true;
+  let ver8 = true;
+  
+  function changeImg(value) {
+  
+      if(value==1){
+          const bulbElement = document.getElementById("heartless-1");
+          ver1 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver1 = !ver1
       }
-      else {
-          image.src = "heart-1.png";
-          state = true;
+      else if(value==2){
+          const bulbElement = document.getElementById("heartless-2");
+          ver2 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver2 = !ver2
       }
+      else if(value==3){
+          const bulbElement = document.getElementById("heartless-3");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver3 = !ver3
+      }
+      else if(value==4){
+          const bulbElement = document.getElementById("heartless-4");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver4 = !ver4
+      }
+      else if(value==5){
+          const bulbElement = document.getElementById("heartless-5");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver5 = !ver5
+      }
+      else if(value==6){
+          const bulbElement = document.getElementById("heartless-6");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver6 = !ver6
+      }
+      else if(value==7){
+          const bulbElement = document.getElementById("heartless-7");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver7 = !ver7
+      }
+      else if(value==8){
+          const bulbElement = document.getElementById("heartless-8");
+          ver3 ? (bulbElement.src = "../Images/red-heart.png") : (bulbElement.src = "../Images/heart-1.png");
+          ver8 = !ver8
+      }
+      
   }
-
-</script>
+  
+  </script>
 </body>
 </html>
